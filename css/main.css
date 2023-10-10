@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+img {
+    display: inline-block;
+}
+.container {
+    width: 1157px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.form {
+    margin-top: 80px;
+}
+label {
+    display: block;
+}
+input:focus {
+    outline: none;
+    border: 1px solid red;
+}
+input::placeholder {
+    color: blue;
+}
+input {
+    padding: 10px;
+    border-color: transparent;
+    border-bottom: 1px solid;
+    color: green;
+}
+.pizza {
+    margin-top: 50px;
+}
+.select {
+    padding: 10px;
+    appearance: none;
+    background-image: url("../images/Select.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: right 10px center;
+}
+.btn {
+    margin-top: 80px;
+}

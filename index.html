@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username" name="user_name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" name="user_email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" name="user_password" required>
+            </div>
+            <div>
+                <label for="tel">Tel</label>
+                <input type="tel" placeholder="Tel" id="tel" name="user_tel" value="+998" required>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" placeholder="Age" id="age" name="user_age" min="7" max="20" required>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" placeholder="Brithday" id="date" name="user_brithday" min="2023-01-01"
+                    max="2023-01-15" required>
+                <div>
+                    <label for="time">Time</label>
+                    <input type="time" placeholder="Time" id="time" name="user_time" required>
+                </div>
+                <div>
+                    <label for="file">File</label>
+                    <input type="file" placeholder="File" id="file" name="user_file" required>
+                </div>
+                <div>
+                    <label>File
+                        <input class="visually-hidden" type="file" placeholder="File" id="file" name="user_file"
+                            required>
+                    </label>
+                </div>
+            </div>
+            <div class="pizza">
+                <label for="pizza">Pizzalar menyusi</label>
+                <select name="pizza_type" id="pizza">
+                    <option value="" disabled selected>Pizza tanlang!</option>
+                    <option value="beaf_meat">Go'shtlik</option>
+                    <option value="peperony">Peperony</option>
+                    <option value="chicken">Tovuqli</option>
+                    <option value="king">Karol</option>
+                    <option value="cheese">Sirlik</option>
+                </select>
+                <select class="select" name="water_type" id="water">
+                    <option value="" disabled selected>Waters</option>
+                    <optgroup label="Cola">
+                        <option value="0.5L">0.5L : 5$</option>
+                        <option value="1L">1L : 10$</option>
+                        <option value="1.5L">1.5L : 15$</option>
+                    </optgroup>
+                    <optgroup label="Fanta">
+                        <option value="0.5L">0.5L : 5$</option>
+                        <option value="1L">1L : 10$</option>
+                        <option value="1.5L">1.5L : 15$</option>
+                    </optgroup>
+                </select>
+            </div>
+            <button class="btn" type="submit">Yuborish</button>
+            <button type="reset">Yangila</button>
+        </form>
+    </div>
+</body>
+
+</html>
